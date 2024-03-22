@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3A6A760D-8A63-4160-829B-739BFAB5CB59}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ViajesPlusTPI</RootNamespace>
+    <AssemblyName>ViajesPlusTPI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GMap.NET.Core, Version=1.7.5.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.NET.WindowsForms.1.7.5\lib\net40\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms, Version=1.7.5.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.NET.WindowsForms.1.7.5\lib\net40\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAbonar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbonar.Designer.cs">
+      <DependentUpon>FormAbonar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCalidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCalidad.Designer.cs">
+      <DependentUpon>FormCalidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCancelarReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCancelarReserva.Designer.cs">
+      <DependentUpon>FormCancelarReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCategoria.Designer.cs">
+      <DependentUpon>FormCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsulta.Designer.cs">
+      <DependentUpon>FormConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCosto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCosto.Designer.cs">
+      <DependentUpon>FormCosto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCrearCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCrearCuenta.Designer.cs">
+      <DependentUpon>FormCrearCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDemanda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDemanda.Designer.cs">
+      <DependentUpon>FormDemanda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormError.Designer.cs">
+      <DependentUpon>FormError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInicio.Designer.cs">
+      <DependentUpon>FormInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormItinerario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormItinerario.Designer.cs">
+      <DependentUpon>FormItinerario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMisPasajes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMisPasajes.Designer.cs">
+      <DependentUpon>FormMisPasajes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOrdenItinerario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrdenItinerario.Designer.cs">
+      <DependentUpon>FormOrdenItinerario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormParada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormParada.Designer.cs">
+      <DependentUpon>FormParada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPasajePorCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPasajePorCategoria.Designer.cs">
+      <DependentUpon>FormPasajePorCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPasajePorFecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPasajePorFecha.Designer.cs">
+      <DependentUpon>FormPasajePorFecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPasajePorItinerario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPasajePorItinerario.Designer.cs">
+      <DependentUpon>FormPasajePorItinerario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRealizado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRealizado.Designer.cs">
+      <DependentUpon>FormRealizado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReservar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReservar.Designer.cs">
+      <DependentUpon>FormReservar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSeguridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSeguridad.Designer.cs">
+      <DependentUpon>FormSeguridad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormServicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormServicio.Designer.cs">
+      <DependentUpon>FormServicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormServicioPorItinerario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormServicioPorItinerario.Designer.cs">
+      <DependentUpon>FormServicioPorItinerario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTransporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTransporte.Designer.cs">
+      <DependentUpon>FormTransporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAbonar.resx">
+      <DependentUpon>FormAbonar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCalidad.resx">
+      <DependentUpon>FormCalidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCancelarReserva.resx">
+      <DependentUpon>FormCancelarReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCategoria.resx">
+      <DependentUpon>FormCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsulta.resx">
+      <DependentUpon>FormConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCosto.resx">
+      <DependentUpon>FormCosto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCrearCuenta.resx">
+      <DependentUpon>FormCrearCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDemanda.resx">
+      <DependentUpon>FormDemanda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormError.resx">
+      <DependentUpon>FormError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInicio.resx">
+      <DependentUpon>FormInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormItinerario.resx">
+      <DependentUpon>FormItinerario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMisPasajes.resx">
+      <DependentUpon>FormMisPasajes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrdenItinerario.resx">
+      <DependentUpon>FormOrdenItinerario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormParada.resx">
+      <DependentUpon>FormParada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPasajePorCategoria.resx">
+      <DependentUpon>FormPasajePorCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPasajePorFecha.resx">
+      <DependentUpon>FormPasajePorFecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPasajePorItinerario.resx">
+      <DependentUpon>FormPasajePorItinerario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRealizado.resx">
+      <DependentUpon>FormRealizado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReservar.resx">
+      <DependentUpon>FormReservar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSeguridad.resx">
+      <DependentUpon>FormSeguridad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormServicio.resx">
+      <DependentUpon>FormServicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormServicioPorItinerario.resx">
+      <DependentUpon>FormServicioPorItinerario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTransporte.resx">
+      <DependentUpon>FormTransporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resource\1.png" />
+    <Content Include="Resource\back.png" />
+    <Content Include="Resource\basura.png" />
+    <Content Include="Resource\blanco.png" />
+    <Content Include="Resource\Bus.ico" />
+    <Content Include="Resource\Bus.png" />
+    <Content Include="Resource\copiar.png" />
+    <Content Include="Resource\FondoModerno.png" />
+    <Content Include="Resource\FondoTerminal.jpg" />
+    <Content Include="Resource\Marco.png" />
+    <Content Include="Resource\negro.png" />
+    <Content Include="Resource\Ojo.png" />
+    <Content Include="Resource\play.png" />
+    <Content Include="Resource\UTN.png" />
+    <Content Include="Resource\volver.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
